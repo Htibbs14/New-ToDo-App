@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  max-width: 100%;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+}
+
+header {
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+}
+
+#taskList {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  padding: 30px;
+}
+
+section #taskList {
+  background-color: blueviolet;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+form #textInput {
+  width: 250px;
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+  margin-right: 10px;
+}
+
+#submitButton {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-weight: 800;
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+#taskList #text {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+}
+
+#taskList .edit {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+}
+
+#taskList .delete {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+}
