@@ -15,7 +15,7 @@ form {
   display: flex;
 }
 
-#taskList {
+.taskList {
   display: flex;
   justify-content: space-between;
 }
@@ -24,7 +24,7 @@ section {
   padding: 30px;
 }
 
-section #taskList {
+section .content {
   background-color: blueviolet;
   padding: 10px 20px;
   border-radius: 10px;
@@ -49,7 +49,7 @@ form #textInput {
   font-family: "Fira Sans", sans-serif;
 }
 
-#taskList #text {
+.taskList #text .text {
   appearance: none;
   border: none;
   outline: none;
@@ -59,7 +59,7 @@ form #textInput {
   font-size: 14px;
 }
 
-#taskList .edit {
+.taskList .edit {
   appearance: none;
   border: none;
   outline: none;
@@ -71,7 +71,7 @@ form #textInput {
   font-size: 14px;
 }
 
-#taskList .delete {
+.taskList .delete {
   appearance: none;
   border: none;
   outline: none;
