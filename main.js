@@ -1,6 +1,6 @@
-let task_input = document.getElementById(text_input);
-let submit = document.getElementById(submitButton);
-let main_list = document.getElementById(list);
+let task_input = document.getElementById("text_input");
+let submit = document.getElementById("submitButton");
+let main_list = document.getElementById("list");
 
 function newTask(event) {
   event.preventDefault();
@@ -28,7 +28,7 @@ function newTask(event) {
   list_content.appendChild(text_content);
 
   let actions = document.createElement("div");
-  actions.classList.add(actions);
+  actions.classList.add("actions");
 
   let edit_button = document.createElement("button");
   edit_button.classList.add("edit");
@@ -44,6 +44,26 @@ function newTask(event) {
   main_list.appendChild(taskList);
 
   task_input.value = "";
-}
 
+  function edit_task(event) {
+    event.preventDefault();
+
+    if (edit_button.innerText.toLowerCase() == "edit") {
+      edit_button.innerText = "Save";
+      text_content.removeAttribute("readonly");
+      text_content.focus();
+    } else {
+      edit_button.innerText = "Edit";
+      text_content.setAttribute("readonly", "readonly");
+    }
+  }
+  function remove_task(event) {
+    event.preventDefault();
+
+    main_list.removeChild(taskList);
+  }
+
+  delete_button.addEventListener("click", remove_task);
+  edit_button.addEventListener("click", edit_task);
+}
 submit.addEventListener("click", newTask);

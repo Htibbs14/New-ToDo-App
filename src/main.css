@@ -15,7 +15,7 @@ form {
   display: flex;
 }
 
-.taskList {
+section #list .taskList {
   display: flex;
   justify-content: space-between;
 }
@@ -24,10 +24,11 @@ section {
   padding: 30px;
 }
 
-section .content {
+section .taskList {
   background-color: blueviolet;
   padding: 10px 20px;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 form #textInput {
@@ -49,7 +50,7 @@ form #textInput {
   font-family: "Fira Sans", sans-serif;
 }
 
-.taskList #text .text {
+section #list .taskList .text {
   appearance: none;
   border: none;
   outline: none;
